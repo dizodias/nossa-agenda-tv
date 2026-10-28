@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="canto">14dp</dimen>
+    <dimen name="margem">48dp</dimen>
+    <dimen name="borda_foco">3dp</dimen>
+</resources>

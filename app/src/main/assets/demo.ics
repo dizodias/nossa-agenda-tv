@@ -1,0 +1,125 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Nossa Agenda//Demo//PT
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Família
+X-WR-TIMEZONE:America/Sao_Paulo
+X-DEMO-ANCORA:20260105
+X-DEMO-NOTA:Semana modelo. O app desloca para a semana corrente.
+BEGIN:VEVENT
+UID:demo-academia-seg
+SUMMARY:Academia
+DTSTART;TZID=America/Sao_Paulo:20260105T063000
+DTEND;TZID=America/Sao_Paulo:20260105T073000
+LOCATION:Academia da Rua Augusta\, Consolação
+DESCRIPTION:Treino de força. Levar a garrafa.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-futebol-ter
+SUMMARY:Futebol das crianças
+DTSTART;TZID=America/Sao_Paulo:20260106T160000
+DTEND;TZID=America/Sao_Paulo:20260106T173000
+LOCATION:Campo da Praça Villaboim\, Higienópolis
+DESCRIPTION:Treino do sub-9. Chegar dez minutos antes.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-ingles-ter
+SUMMARY:Aula de inglês
+DTSTART;TZID=America/Sao_Paulo:20260106T173000
+DTEND;TZID=America/Sao_Paulo:20260106T183000
+LOCATION:Escola de idiomas da Rua da Consolação\, Consolação
+DESCRIPTION:Lição 12. Revisar o vocabulário de viagem.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-academia-qua
+SUMMARY:Academia
+DTSTART;TZID=America/Sao_Paulo:20260107T063000
+DTEND;TZID=America/Sao_Paulo:20260107T073000
+LOCATION:Academia da Rua Augusta\, Consolação
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-veterinario
+SUMMARY:Veterinário do Thor
+DTSTART;TZID=America/Sao_Paulo:20260107T150000
+DTEND;TZID=America/Sao_Paulo:20260107T154500
+LOCATION:Clínica da Rua Harmonia\, Vila Madalena
+DESCRIPTION:Vacina anual do Thor. Levar a carteirinha.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-mercado-qua
+SUMMARY:Mercado
+DTSTART;TZID=America/Sao_Paulo:20260107T183000
+DTEND;TZID=America/Sao_Paulo:20260107T193000
+LOCATION:Pão de Açúcar da Avenida Rebouças\, Pinheiros
+DESCRIPTION:Frutas\, pão e leite.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-dentista
+SUMMARY:Dentista
+DTSTART;TZID=America/Sao_Paulo:20260108T143000
+DTEND;TZID=America/Sao_Paulo:20260108T153000
+LOCATION:Consultório na Rua Haddock Lobo\, Cerqueira César
+DESCRIPTION:Limpeza. Chegar quinze minutos antes.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-ingles-qui
+SUMMARY:Aula de inglês
+DTSTART;TZID=America/Sao_Paulo:20260108T173000
+DTEND;TZID=America/Sao_Paulo:20260108T183000
+LOCATION:Escola de idiomas da Rua da Consolação\, Consolação
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-reuniao-pais
+SUMMARY:Reunião de pais
+DTSTART;TZID=America/Sao_Paulo:20260108T193000
+DTEND;TZID=America/Sao_Paulo:20260108T203000
+LOCATION:Escola da Rua Tutóia\, Paraíso
+DESCRIPTION:Conversa sobre o semestre. Sala 3.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-academia-sex
+SUMMARY:Academia
+DTSTART;TZID=America/Sao_Paulo:20260109T063000
+DTEND;TZID=America/Sao_Paulo:20260109T073000
+LOCATION:Academia da Rua Augusta\, Consolação
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-cinema
+SUMMARY:Cinema em família
+DTSTART;TZID=America/Sao_Paulo:20260109T160000
+DTEND;TZID=America/Sao_Paulo:20260109T181500
+LOCATION:Cinemark do Shopping Pátio Higienópolis\, Higienópolis
+DESCRIPTION:Sessão da tarde. Pipoca para dividir.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-futebol-sab
+SUMMARY:Futebol das crianças
+DTSTART;TZID=America/Sao_Paulo:20260110T090000
+DTEND;TZID=America/Sao_Paulo:20260110T103000
+LOCATION:Campo da Praça Villaboim\, Higienópolis
+DESCRIPTION:Jogo amistoso. Levar chuteira e água.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-mercado-sab
+SUMMARY:Mercado
+DTSTART;TZID=America/Sao_Paulo:20260110T110000
+DTEND;TZID=America/Sao_Paulo:20260110T120000
+LOCATION:Feira da Praça Benedito Calixto\, Pinheiros
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-jantar
+SUMMARY:Jantar com amigos
+DTSTART;TZID=America/Sao_Paulo:20260110T200000
+DTEND;TZID=America/Sao_Paulo:20260110T223000
+LOCATION:Restaurante da Rua Wisard\, Vila Madalena
+DESCRIPTION:Mesa para quatro.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-aniversario
+SUMMARY:Aniversário da vó
+DTSTART;VALUE=DATE:20260111
+DTEND;VALUE=DATE:20260112
+LOCATION:Casa da família\, Vila Mariana
+DESCRIPTION:Almoço. Bolo de chocolate e suco de maracujá.
+END:VEVENT
+END:VCALENDAR

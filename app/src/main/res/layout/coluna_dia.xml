@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="6dp"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/coluna_rotulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.14"
+        android:textAllCaps="true"
+        android:textColor="@color/texto_fraco"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/coluna_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:textColor="@color/branco"
+        android:textSize="22sp" />
+
+    <ScrollView
+        android:id="@+id/coluna_rolagem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/coluna_itens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</LinearLayout>

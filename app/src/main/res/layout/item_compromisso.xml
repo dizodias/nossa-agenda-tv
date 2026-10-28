@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/cartao"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="18dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="18dp"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/hora"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:includeFontPadding="false"
+        android:textColor="@color/branco"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textColor="@color/branco"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/texto_fraco"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

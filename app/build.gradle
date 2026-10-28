@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+}
+
+def arquivoSegredos = rootProject.file('secrets.properties')
+def enderecoAgenda = ''
+if (arquivoSegredos.exists()) {
+    def propriedades = new Properties()
+    arquivoSegredos.withInputStream { fluxo -> propriedades.load(fluxo) }
+    def valor = propriedades.getProperty('ICAL_URL')
+    if (valor != null) enderecoAgenda = valor.trim()
+}
+
+// Literal Java do BuildConfig. O valor não pode ir para o log do Gradle.
+def aspas = '"'
+def barra = '\\'
+def escapado = enderecoAgenda
+        .replace(barra, barra + barra)
+        .replace(aspas, barra + aspas)
+        .replace('\r', '')
+        .replace('\n', '')
+
+android {
+    namespace 'br.lucas.agenda'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'br.lucas.agenda'
+        // Fire TV Stick: Fire OS 6 / Android 7.1.
+        minSdk 25
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+        buildConfigField 'String', 'ICAL_URL', aspas + escapado + aspas
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    testOptions {
+        unitTests.all { teste ->
+            teste.doFirst {
+                teste.setClasspath(files(teste.classpath.files.findAll { it.name != 'android.jar' }))
+            }
+        }
+    }
+
+    lint {
+        abortOnError true
+        checkReleaseBuilds true
+        error 'NewApi'
+    }
+}
+
+dependencies {
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    // java.time no Android 7 (minSdk 25). O R8 fica só com o que o app chama.
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.4'
+    testImplementation 'junit:junit:4.13.2'
+}

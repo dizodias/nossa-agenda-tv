@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:clipChildren="false">
+
+    <LinearLayout
+        android:id="@+id/conteudo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/margem"
+        android:paddingTop="24dp"
+        android:paddingEnd="@dimen/margem"
+        android:paddingBottom="20dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:includeFontPadding="false"
+                    android:text="@string/titulo"
+                    android:textColor="@color/branco"
+                    android:textSize="26sp" />
+
+                <View
+                    android:layout_width="36dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/azul" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:letterSpacing="0.14"
+                        android:text="@string/familia"
+                        android:textAllCaps="true"
+                        android:textColor="@color/texto_fraco"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/selo_demo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/selo_demo"
+                        android:focusable="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="0.12"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingEnd="6dp"
+                        android:paddingBottom="2dp"
+                        android:text="@string/demo"
+                        android:textAllCaps="true"
+                        android:textColor="@color/texto_fraco"
+                        android:textSize="11sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/atualizado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_fraco"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vazio"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/sem_compromissos"
+            android:textColor="@color/texto_fraco"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:descendantFocusability="afterDescendants"
+            android:focusable="false"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="16dp"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/painel_mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp">
+
+        <TextView
+            android:id="@+id/mensagem_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/carregando"
+            android:textColor="@color/branco"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/mensagem_corpo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:maxWidth="640dp"
+            android:textColor="@color/texto_fraco"
+            android:textSize="18sp" />
+    </LinearLayout>
+</FrameLayout>

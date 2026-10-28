@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fundo">#FF0F0F10</color>
+    <color name="cartao">#FF1C1C1E</color>
+    <color name="branco">#FFFFFFFF</color>
+    <color name="texto_fraco">#A6FFFFFF</color>
+    <color name="azul">#FF0A84FF</color>
+    <color name="azul_suave">#330A84FF</color>
+</resources>

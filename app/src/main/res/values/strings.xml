@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nossa Agenda</string>
+    <string name="titulo">Nossa Agenda</string>
+    <string name="familia">Família</string>
+    <string name="demo">Demo</string>
+    <string name="configure">Configure a agenda</string>
+    <string name="configure_ajuda">Coloque o endereço secreto da agenda no arquivo secrets.properties e gere o app de novo.</string>
+    <string name="carregando">Buscando a agenda…</string>
+    <string name="sem_rede">Sem rede. Não deu para atualizar a agenda.</string>
+    <string name="sem_rede_ajuda">A última versão fica guardada neste aparelho quando a busca funcionar uma vez.</string>
+    <string name="sem_compromissos">Nenhum compromisso por perto.</string>
+    <string name="atualizado">atualizado às %1$s</string>
+    <string name="sem_rede_cache">sem rede · última atualização às %1$s</string>
+    <string name="dia_todo">Dia todo</string>
+    <string name="dia_inteiro">Dia inteiro</string>
+    <string name="nada_semana">Nada nesta semana</string>
+    <string name="troca_semana">esquerda e direita trocam a semana</string>
+    <string name="semana">Semana</string>
+    <string name="sem_titulo">Compromisso</string>
+</resources>
